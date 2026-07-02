@@ -16,6 +16,7 @@ console.log(productName, price, inStock);
 
 
 
+
 /*
 Question 2: Mathematical Operations
 Calculate and display:
@@ -183,15 +184,338 @@ console.log(extract);
 
 
 
-
 /*
 Question 8: for Loop - Number Sequence:
 Write a for loop that prints numbers from 1 to 10,
-but skips number 5 using continue, and stops at 8 using break. 
+but skips number 5 using continue, and stops at 8 using break.
 Also calculate the sum of all printed numbers.
 */
 
 
 // Answer 8:
+
+
+let sumValue = 0;
+for(let i=1; i<=10; i++){
+    if(i === 5){
+        continue;
+    }else if(i === 8){
+        break;
+    }
+
+    sumValue += i;
+}
+
+console.log(sumValue);
+
+
+
+
+
+
+/*
+Question 9: Nested for Loop - Pattern
+Write nested for loops to create this pattern:
+
+*
+**
+***
+****
+*****
+
+*/
+
+
+// Answer 9:
+
+
+for(let j=1; j<=5; j++){
+    console.log("*" .repeat(j))
+}
+
+
+
+
+/*
+Question 10: String Methods - Search and Extract
+Given text = "The quick brown fox jumps over the lazy dog":
+
+Find the position of "fox"
+Extract "brown fox" using substring/slice
+Check if the text contains "dog"
+Get the character at position 10
+*/
+
+
+// Answer 10:
+
+
+let text = "The quick brown fox jumps over the lazy dog";
+
+const a= text.indexOf("fox");
+const b= text.slice(10, 20);
+
+if(text === "dog"){
+    console.log("Have");
+}else{
+    console.log("Don't Have");
+}
+
+const c= text.charAt(10);
+
+
+
+
+
+/*
+Question 11: String Replacement
+Given sentence = "I love JavaScript and JavaScript is awesome":
+
+Replace the first "JavaScript" with "coding"
+Replace ALL "JavaScript" with "JS"
+Replace "awesome" with uppercase "AWESOME"
+*/
+
+
+// Answer 11:
+
+
+let sentence = "I love JavaScript and JavaScript is awesome";
+
+let d= sentence.replace("JavaScript", "coding");
+let e= sentence.replaceAll("JavaScript", "JS");
+let replaceToUpper = sentence.replace("awesome", "awesome".toUpperCase());
+
+
+
+
+
+/*
+Question 12: Number Rounding and Formatting
+Given num = 123.456789:
+
+Round to 2 decimal places
+Round to nearest integer
+Get the floor value
+Get the ceiling value
+Format to show exactly 4 decimal places
+*/
+
+
+// Answer 12:
+
+
+let num = 123.456789;
+
+let math1 = Math.round(num)/10;
+let math2 = Math.round(num);
+let math3 = Math.floor(num);
+let math4 = Math.ceil(num);
+let math5 = Math.round(num)*10;
+
+
+
+
+
+/*
+Question 13: Random Number Generation
+Generate:
+
+A random integer between 1 and 100 (inclusive)
+A random decimal between 0 and 1 with 3 decimal places
+A random number between 50 and 75 (inclusive)
+*/
+
+
+// Answer 13:
+
+
+let random1 = Math.random()*100;
+let r = Math.round(random1);
+
+let random2 = (Math.random()*2).toFixed(3);
+let random3 = Math.floor(Math.random() * 26) + 50;
+
+
+
+
+
+/*
+Question 14: Type Conversion
+Perform these conversions:
+
+Convert string "123" to number
+Convert string "45.67" to decimal (float)
+Convert number 789 to string
+Check the type of "true" after converting to boolean
+*/
+
+// Answer 14:
+
+
+let converter1 = +"123";
+
+let converter2 = "45.67";
+let r2 = parseFloat(converter2);
+
+let converter3 = 789;
+let r3 = converter3.toString();
+
+let converter4 = Boolean("true");
+
+console.log(converter4, typeof(converter4));
+
+
+
+
+/*
+Question 15: Date and Time Operations
+Create a Date object for the current time and:
+
+Extract the year, month (0-11), and day
+Get the hours in 24-hour format
+Format it as "YYYY-MM-DD"
+Create a specific date for December 25, 2024
+*/
+
+
+// Answer 15:
+
+
+
+const getData = new Date;
+let date1 = getData.getFullYear();
+let date2 = getData.getMonth();
+let date3 = getData.getDay();
+let date4 = getData.getHours();
+
+console.log(date4);
+console.log(date1, date2, date3);
+
+let setdata = new Date("2024-12-25");
+
+
+
+
+/*
+Question 16: Function - Basic Calculator:
+Write a function calculate that takes two numbers and an operator (+, -, *, /)
+as parameters and returns the result.
+Handle division by zero by returning "Error: Division by zero".
+*/
+
+
+// Answer 16:
+
+
+const add = (a,b) => a + b;
+const subt = (a,b) => a - b;
+const mult = (a,b) => a * b;
+const div = (a,b) => a/b;
+
+let userInput1 = +prompt("Enter A Number!");
+let userInput2 = +prompt("Enter Another Number");
+let operator = prompt("Enter A opreator (+, -, *, /)");
+
+switch(operator){
+    case "+":
+     console.log(add(userInput1, userInput2));
+     break;
+      case "-":
+        console.log(subt(userInput1, userInput2));
+        break;
+         case "*":
+            console.log(mult(userInput1, userInput2));
+            break;
+             case "/":
+                console.log(div(userInput1, userInput2));
+                break;
+
+                default:
+                    console.log("Invalid Number OR Opreator!");  
+}
+
+
+
+
+
+/*
+Question 17: Function - Local vs Global Variables:
+Create a global variable globalCounter = 0.
+Write a function incrementCounter that declares a local variable with the same name and increments it,
+while also incrementing the global variable. Show the difference after calling the function twice.
+*/
+
+
+// Answer 17:
+
+
+let globalCounter = 0;
+globalCounter++;
+const incrementCounter = () => {
+    let globalCounter = 0;
+    globalCounter++;
+    console.log(globalCounter);
+}
+
+incrementCounter();
+incrementCounter();
+console.log(globalCounter);
+
+
+
+
+
+/*
+Question 18: switch Statement - Day of Week:
+Write a switch statement that takes a number (0-6)
+and returns the corresponding day name (0=Sunday, 1=Monday, etc.).
+Include a default case for invalid numbers.
+*/
+
+
+// Answer 18:
+
+
+let dayOfWeek = +prompt("Enter Number Between 0-6");
+
+switch(true){
+    case 0:
+        console.log("0 = Sunday");
+        break;
+        case 1:
+            console.log("1 = Monday");
+            break;
+            case 2:
+                console.log("2 = Tuesday");
+                break;
+                case 3:
+                    console.log("3 = Wednesday");
+                    break;
+                    case 4:
+                        console.log("4 = Thusday");
+                        break;
+                        case 5:
+                            console.log("5 = Friday");
+                            break;
+                            case 6:
+                                console.log("6 = Saturday");
+                                break;
+                                default:
+                                    console.log("Invalid Number");
+}
+
+
+
+
+/*
+Question 19: while Loop - Countdown:
+Write a while loop that starts at 10 and counts down to 1,
+printing each number. Then print "Blast off!".
+Also calculate the factorial of 5 using a while loop.
+*/
+
+
+// Answer 19:
 
 
