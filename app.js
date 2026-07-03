@@ -408,14 +408,22 @@ Handle division by zero by returning "Error: Division by zero".
 // Answer 16:
 
 
-const add = (a,b) => a + b;
-const subt = (a,b) => a - b;
-const mult = (a,b) => a * b;
-const div = (a,b) => a/b;
-
 let userInput1 = +prompt("Enter A Number!");
 let userInput2 = +prompt("Enter Another Number");
 let operator = prompt("Enter A opreator (+, -, *, /)");
+
+
+const add = (a,b) => a + b;
+const subt = (a,b) => a - b;
+const mult = (a,b) => a * b;
+const div = (a,b) => {
+    if(userInput1 === 0 || userInput2 === 0){
+        console.log("Error: Division by zero");
+    }else{
+        return a/b;
+    }
+}
+
 
 switch(operator){
     case "+":
@@ -479,7 +487,7 @@ Include a default case for invalid numbers.
 
 let dayOfWeek = +prompt("Enter Number Between 0-6");
 
-switch(true){
+switch(dayOfWeek){
     case 0:
         console.log("0 = Sunday");
         break;
