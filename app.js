@@ -8,6 +8,7 @@ Console.log all three variables in a single statement.
 
 // Answer 1:
 
+
 let productName = "Laptop";
 let price = 999.99;
 let inStock = true;
@@ -28,6 +29,7 @@ The result of decrementing 15 by 2 using the -= operator
 */
 
 // Answer 2:
+
 
 let remainder = 27/4;
 console.log(remainder);
@@ -254,15 +256,8 @@ let text = "The quick brown fox jumps over the lazy dog";
 
 const a= text.indexOf("fox");
 const b= text.slice(10, 20);
-
-if(text === "dog"){
-    console.log("Have");
-}else{
-    console.log("Don't Have");
-}
-
+const l= text.includes("dog")
 const c= text.charAt(10);
-
 
 
 
@@ -408,6 +403,7 @@ Handle division by zero by returning "Error: Division by zero".
 // Answer 16:
 
 
+
 let userInput1 = +prompt("Enter A Number!");
 let userInput2 = +prompt("Enter Another Number");
 let operator = prompt("Enter A opreator (+, -, *, /)");
@@ -525,5 +521,54 @@ Also calculate the factorial of 5 using a while loop.
 
 
 // Answer 19:
+
+
+
+
+
+
+
+
+/*
+Question 20: do...while Loop - User Input Simulation:
+Create a do...while loop that simulates asking for a password.
+Start with enteredPassword = "" and keep "asking" (incrementing a counter)
+until enteredPassword === "secret123" or 5 attempts are made.
+ */
+
+
+// Answer 20:
+
+
+
+let i = 1;
+do{
+    let userOutput = prompt("Enter A secret password");
+    i++
+    if(userOutput === "secret123"){
+        console.log(userOutput+" Correct Password");
+        break;
+    }else{
+        console.log("5 attempts are made.");
+    }
+    
+}while(i<=5);
+
+
+
+
+
+/*
+Question 21: Array Methods with for Loop
+Given numbers = [12, 45, 78, 23, 56, 89, 34]:
+
+Use a for loop to find the maximum value
+Use a for loop to calculate the average
+Create a new array with only numbers greater than 50
+Reverse the array without using reverse() method
+*/
+
+
+// Answer 21:
 
 
