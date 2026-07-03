@@ -13,7 +13,7 @@ let productName = "Laptop";
 let price = 999.99;
 let inStock = true;
 
-console.log(productName, price, inStock);
+// console.log(productName, price, inStock);
 
 
 
@@ -32,23 +32,23 @@ The result of decrementing 15 by 2 using the -= operator
 
 
 let remainder = 27/4;
-console.log(remainder);
+// console.log(remainder);
 
 
 const square = 12**2;
-console.log(square);
+// console.log(square);
 
 
 let increment = 8;
 increment++
 
-console.log(increment);
+// console.log(increment);
 
 
 let decrement = 15;
 decrement -=2
 
-console.log(decrement);
+// console.log(decrement);
 
 
 
@@ -70,7 +70,7 @@ let lastName = " SMITH".toLowerCase();
 let fullName = firstName + lastName;
 let lengthOf = fullName.length;
 
-console.log(fullName);
+// console.log(fullName);
 
 
 
@@ -91,7 +91,7 @@ Otherwise, console.log "Cold day". Test with temperature = 25.
 let temperature = 35;
 
 if(temperature === 35){
-    console.log("Hot day");
+    // console.log("Hot day");
 
 }else if(temperature === 20,30){
     console.log("Pleasant day");
@@ -117,23 +117,23 @@ Check if 10 is not equal to 10 OR 5 is greater than 3
 
 
 if(15 === "15"){
-    console.log("Correct");
+    // console.log("Correct");
 }else{
-    console.log("Not equal to");
+    // console.log("Not equal to");
 }
 
 
 if(20 > 15 && 20 < 25){
-    console.log("Correct");
+    // console.log("Correct");
 }else{
-    console.log("Not Correct");
+    // console.log("Not Correct");
 }
 
 
 if(10 !== 10 || 5 > 3){
-    console.log("Correct");
+    // console.log("Correct");
 }else{
-    console.log("Not Correct");
+    // console.log("Not Correct");
 }
 
 
@@ -157,7 +157,7 @@ let colors = ["red", "green", "blue"];
 colors.shift();
 colors.unshift("purple")
 
-console.log(colors, colors.length);
+// console.log(colors, colors.length);
 
 
 
@@ -180,7 +180,7 @@ let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
 fruits.splice(2,1);
 fruits.splice(2, 1, "dragonfruit");
 let extract = fruits.splice(1, 3);
-console.log(extract);
+// console.log(extract);
 
 
 
@@ -207,7 +207,7 @@ for(let i=1; i<=10; i++){
     sumValue += i;
 }
 
-console.log(sumValue);
+// console.log(sumValue);
 
 
 
@@ -231,7 +231,7 @@ Write nested for loops to create this pattern:
 
 
 for(let j=1; j<=5; j++){
-    console.log("*" .repeat(j))
+    // console.log("*" .repeat(j))
 }
 
 
@@ -357,7 +357,7 @@ let r3 = converter3.toString();
 
 let converter4 = Boolean("true");
 
-console.log(converter4, typeof(converter4));
+// console.log(converter4, typeof(converter4));
 
 
 
@@ -383,8 +383,8 @@ let date2 = getData.getMonth();
 let date3 = getData.getDay();
 let date4 = getData.getHours();
 
-console.log(date4);
-console.log(date1, date2, date3);
+// console.log(date4);
+// console.log(date1, date2, date3);
 
 let setdata = new Date("2024-12-25");
 
@@ -403,40 +403,40 @@ Handle division by zero by returning "Error: Division by zero".
 
 
 
-let userInput1 = +prompt("Enter A Number!");
-let userInput2 = +prompt("Enter Another Number");
-let operator = prompt("Enter A opreator (+, -, *, /)");
+// let userInput1 = +prompt("Enter A Number!");
+// let userInput2 = +prompt("Enter Another Number");
+// let operator = prompt("Enter A opreator (+, -, *, /)");
 
 
-const add = (a,b) => a + b;
-const subt = (a,b) => a - b;
-const mult = (a,b) => a * b;
-const div = (a,b) => {
-    if(userInput1 === 0 || userInput2 === 0){
-        console.log("Error: Division by zero");
-    }else{
-        return a/b;
-    }
-}
+// const add = (a,b) => a + b;
+// const subt = (a,b) => a - b;
+// const mult = (a,b) => a * b;
+// const div = (a,b) => {
+//     if(userInput1 === 0 || userInput2 === 0){
+//         console.log("Error: Division by zero");
+//     }else{
+//         return a/b;
+//     }
+// }
 
 
-switch(operator){
-    case "+":
-     console.log(add(userInput1, userInput2));
-     break;
-      case "-":
-        console.log(subt(userInput1, userInput2));
-        break;
-         case "*":
-            console.log(mult(userInput1, userInput2));
-            break;
-             case "/":
-                console.log(div(userInput1, userInput2));
-                break;
+// switch(operator){
+//     case "+":
+//      console.log(add(userInput1, userInput2));
+//      break;
+//       case "-":
+//         console.log(subt(userInput1, userInput2));
+//         break;
+//          case "*":
+//             console.log(mult(userInput1, userInput2));
+//             break;
+//              case "/":
+//                 console.log(div(userInput1, userInput2));
+//                 break;
 
-                default:
-                    console.log("Invalid Number OR Opreator!");  
-}
+//                 default:
+//                     console.log("Invalid Number OR Opreator!");  
+// }
 
 
 
@@ -461,9 +461,9 @@ const incrementCounter = () => {
     console.log(globalCounter);
 }
 
-incrementCounter();
-incrementCounter();
-console.log(globalCounter);
+// incrementCounter();
+// incrementCounter();
+// console.log(globalCounter);
 
 
 
@@ -480,33 +480,33 @@ Include a default case for invalid numbers.
 // Answer 18:
 
 
-let dayOfWeek = +prompt("Enter Number Between 0-6");
+// let dayOfWeek = +prompt("Enter Number Between 0-6");
 
-switch(dayOfWeek){
-    case 0:
-        console.log("0 = Sunday");
-        break;
-        case 1:
-            console.log("1 = Monday");
-            break;
-            case 2:
-                console.log("2 = Tuesday");
-                break;
-                case 3:
-                    console.log("3 = Wednesday");
-                    break;
-                    case 4:
-                        console.log("4 = Thusday");
-                        break;
-                        case 5:
-                            console.log("5 = Friday");
-                            break;
-                            case 6:
-                                console.log("6 = Saturday");
-                                break;
-                                default:
-                                    console.log("Invalid Number");
-}
+// switch(dayOfWeek){
+//     case 0:
+//         console.log("0 = Sunday");
+//         break;
+//         case 1:
+//             console.log("1 = Monday");
+//             break;
+//             case 2:
+//                 console.log("2 = Tuesday");
+//                 break;
+//                 case 3:
+//                     console.log("3 = Wednesday");
+//                     break;
+//                     case 4:
+//                         console.log("4 = Thusday");
+//                         break;
+//                         case 5:
+//                             console.log("5 = Friday");
+//                             break;
+//                             case 6:
+//                                 console.log("6 = Saturday");
+//                                 break;
+//                                 default:
+//                                     console.log("Invalid Number");
+// }
 
 
 
@@ -521,13 +521,13 @@ Also calculate the factorial of 5 using a while loop.
 
 // Answer 19:
 
-let counts = 10;
+// let counts = 10;
 
-while(counts >= 1){
-    console.log(counts);
-    counts--;
-}
-console.log("Blast off");
+// while(counts >= 1){
+//     console.log(counts);
+//     counts--;
+// }
+// console.log("Blast off");
 
 
 
@@ -544,17 +544,17 @@ until enteredPassword === "secret123" or 5 attempts are made.
 
 
 let i = 1;
-do{
-    let userOutput = prompt("Enter A secret password");
-    i++
-    if(userOutput === "secret123"){
-        console.log(userOutput+" Correct Password");
-        break;
-    }else{
-        console.log("5 attempts are made.");
-    }
+// do{
+//     let userOutput = prompt("Enter A secret password");
+//     i++
+//     if(userOutput === "secret123"){
+//         console.log(userOutput+" Correct Password");
+//         break;
+//     }else{
+//         console.log("5 attempts are made.");
+//     }
     
-}while(i<=5);
+// }while(i<=5);
 
 
 
@@ -638,7 +638,6 @@ function handleClick(){
         userName.value = "";
     }
 }
-
 
 
 
