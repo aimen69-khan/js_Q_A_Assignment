@@ -46,8 +46,7 @@ console.log(increment);
 
 
 let decrement = 15;
---decrement;
---decrement;
+decrement -=2
 
 console.log(decrement);
 
@@ -522,10 +521,14 @@ Also calculate the factorial of 5 using a while loop.
 
 // Answer 19:
 
+let counts = 10;
 
+while(counts >= 1){
+    console.log(counts);
+    counts--;
 
-
-
+}
+console.log("Blast off");
 
 
 
@@ -570,5 +573,6 @@ Reverse the array without using reverse() method
 
 
 // Answer 21:
+
 
 
