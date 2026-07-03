@@ -526,7 +526,6 @@ let counts = 10;
 while(counts >= 1){
     console.log(counts);
     counts--;
-
 }
 console.log("Blast off");
 
@@ -574,5 +573,87 @@ Reverse the array without using reverse() method
 
 // Answer 21:
 
+
+
+let numbers = [12, 45, 78, 23, 56, 89, 34];
+let maxValue= numbers[0];
+
+for(let k= 1; k < numbers.length; k++){
+    if(numbers[k] > maxValue){
+        maxValue = numbers[k];
+    }
+}
+
+
+let sum1 = 0;
+for(let i=0; i<numbers.length; i++){
+    sum1 += numbers[i];
+}
+
+let average = sum1 / numbers.length;
+
+
+
+let greaterThan50 = [];
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 50) {
+        greaterThan50.push(numbers[i]);
+    }
+}
+
+
+
+let reversed = [];
+
+for (let i = numbers.length - 1; i >= 0; i--) {
+    reversed.push(numbers[i]);
+}
+
+
+
+
+/*
+Question 22: Event Handling Simulation
+Create a function handleClick that:
+
+Gets a value from an input field with id "username"
+Checks if it's empty and shows an alert if so
+Otherwise, displays "Welcome, [username]!" in a paragraph with id "greeting"
+Resets the input field after greeting
+*/
+
+
+// Answer 22:
+
+
+function handleClick(){
+    let userName = document.getElementById('username');
+    let userNameValue = userName.value;
+    if(userNameValue === ""){
+        alert("Input Field is Emply");
+
+    }else{
+        let showPassword = document.getElementById('greeting');
+        showPassword.textContent = "Welcome " +userNameValue+ "!";
+        userName.value = "";
+    }
+}
+
+
+
+
+
+/*
+Question 23: Form Validation Function
+Write a function validateForm that:
+
+Takes email and password as parameters
+Returns true if email contains "@" and password length ≥ 8
+Otherwise returns false with specific error messages
+Test with multiple test cases
+*/
+
+
+// Answer 23:
 
 
