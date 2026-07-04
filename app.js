@@ -594,6 +594,7 @@ let average = sum1 / numbers.length;
 
 
 
+
 let greaterThan50 = [];
 for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] > 50) {
