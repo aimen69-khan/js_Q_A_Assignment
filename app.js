@@ -6,6 +6,8 @@ inStock (boolean with value true).
 Console.log all three variables in a single statement.
 */
 
+
+
 // Answer 1:
 
 
@@ -13,7 +15,7 @@ let productName = "Laptop";
 let price = 999.99;
 let inStock = true;
 
-// console.log(productName, price, inStock);
+console.log(productName, price, inStock);
 
 
 
@@ -32,23 +34,24 @@ The result of decrementing 15 by 2 using the -= operator
 
 
 let remainder = 27/4;
-// console.log(remainder);
+console.log(remainder);
 
 
 const square = 12**2;
-// console.log(square);
+console.log(square);
 
 
 let increment = 8;
 increment++
 
-// console.log(increment);
+console.log(increment);
 
 
 let decrement = 15;
 decrement -=2
 
-// console.log(decrement);
+
+console.log(decrement);
 
 
 
@@ -60,6 +63,8 @@ then convert the result to proper case (first letter uppercase, rest lowercase).
 Also find the total length of the full name.
 */
 
+
+
 // Answer 3:
 
 
@@ -70,7 +75,7 @@ let lastName = " SMITH".toLowerCase();
 let fullName = firstName + lastName;
 let lengthOf = fullName.length;
 
-// console.log(fullName);
+console.log(fullName);
 
 
 
@@ -91,7 +96,7 @@ Otherwise, console.log "Cold day". Test with temperature = 25.
 let temperature = 35;
 
 if(temperature === 35){
-    // console.log("Hot day");
+    console.log("Hot day");
 
 }else if(temperature === 20,30){
     console.log("Pleasant day");
@@ -117,23 +122,23 @@ Check if 10 is not equal to 10 OR 5 is greater than 3
 
 
 if(15 === "15"){
-    // console.log("Correct");
+    console.log("Correct");
 }else{
-    // console.log("Not equal to");
+    console.log("Not equal to");
 }
 
 
 if(20 > 15 && 20 < 25){
-    // console.log("Correct");
+    console.log("Correct");
 }else{
-    // console.log("Not Correct");
+    console.log("Not Correct");
 }
 
 
 if(10 !== 10 || 5 > 3){
-    // console.log("Correct");
+    console.log("Correct");
 }else{
-    // console.log("Not Correct");
+    console.log("Not Correct");
 }
 
 
@@ -157,7 +162,7 @@ let colors = ["red", "green", "blue"];
 colors.shift();
 colors.unshift("purple")
 
-// console.log(colors, colors.length);
+console.log(colors, colors.length);
 
 
 
@@ -180,7 +185,7 @@ let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
 fruits.splice(2,1);
 fruits.splice(2, 1, "dragonfruit");
 let extract = fruits.splice(1, 3);
-// console.log(extract);
+console.log(extract);
 
 
 
@@ -207,7 +212,7 @@ for(let i=1; i<=10; i++){
     sumValue += i;
 }
 
-// console.log(sumValue);
+console.log(sumValue);
 
 
 
@@ -231,7 +236,7 @@ Write nested for loops to create this pattern:
 
 
 for(let j=1; j<=5; j++){
-    // console.log("*" .repeat(j))
+    console.log("*" .repeat(j))
 }
 
 
@@ -357,7 +362,7 @@ let r3 = converter3.toString();
 
 let converter4 = Boolean("true");
 
-// console.log(converter4, typeof(converter4));
+console.log(converter4, typeof(converter4));
 
 
 
@@ -383,8 +388,8 @@ let date2 = getData.getMonth();
 let date3 = getData.getDay();
 let date4 = getData.getHours();
 
-// console.log(date4);
-// console.log(date1, date2, date3);
+console.log(date4);
+console.log(date1, date2, date3);
 
 let setdata = new Date("2024-12-25");
 
@@ -403,40 +408,40 @@ Handle division by zero by returning "Error: Division by zero".
 
 
 
-// let userInput1 = +prompt("Enter A Number!");
-// let userInput2 = +prompt("Enter Another Number");
-// let operator = prompt("Enter A opreator (+, -, *, /)");
+let userInput1 = +prompt("Enter A Number!");
+let userInput2 = +prompt("Enter Another Number");
+let operator = prompt("Enter A opreator (+, -, *, /)");
 
 
-// const add = (a,b) => a + b;
-// const subt = (a,b) => a - b;
-// const mult = (a,b) => a * b;
-// const div = (a,b) => {
-//     if(userInput1 === 0 || userInput2 === 0){
-//         console.log("Error: Division by zero");
-//     }else{
-//         return a/b;
-//     }
-// }
+const add = (a,b) => a + b;
+const subt = (a,b) => a - b;
+const mult = (a,b) => a * b;
+const div = (a,b) => {
+    if(userInput1 === 0 || userInput2 === 0){
+        console.log("Error: Division by zero");
+    }else{
+        return a/b;
+    }
+}
 
 
-// switch(operator){
-//     case "+":
-//      console.log(add(userInput1, userInput2));
-//      break;
-//       case "-":
-//         console.log(subt(userInput1, userInput2));
-//         break;
-//          case "*":
-//             console.log(mult(userInput1, userInput2));
-//             break;
-//              case "/":
-//                 console.log(div(userInput1, userInput2));
-//                 break;
+switch(operator){
+    case "+":
+     console.log(add(userInput1, userInput2));
+     break;
+      case "-":
+        console.log(subt(userInput1, userInput2));
+        break;
+         case "*":
+            console.log(mult(userInput1, userInput2));
+            break;
+             case "/":
+                console.log(div(userInput1, userInput2));
+                break;
 
-//                 default:
-//                     console.log("Invalid Number OR Opreator!");  
-// }
+                default:
+                    console.log("Invalid Number OR Opreator!");  
+}
 
 
 
@@ -461,9 +466,9 @@ const incrementCounter = () => {
     console.log(globalCounter);
 }
 
-// incrementCounter();
-// incrementCounter();
-// console.log(globalCounter);
+incrementCounter();
+incrementCounter();
+console.log(globalCounter);
 
 
 
@@ -480,33 +485,33 @@ Include a default case for invalid numbers.
 // Answer 18:
 
 
-// let dayOfWeek = +prompt("Enter Number Between 0-6");
+let dayOfWeek = +prompt("Enter Number Between 0-6");
 
-// switch(dayOfWeek){
-//     case 0:
-//         console.log("0 = Sunday");
-//         break;
-//         case 1:
-//             console.log("1 = Monday");
-//             break;
-//             case 2:
-//                 console.log("2 = Tuesday");
-//                 break;
-//                 case 3:
-//                     console.log("3 = Wednesday");
-//                     break;
-//                     case 4:
-//                         console.log("4 = Thusday");
-//                         break;
-//                         case 5:
-//                             console.log("5 = Friday");
-//                             break;
-//                             case 6:
-//                                 console.log("6 = Saturday");
-//                                 break;
-//                                 default:
-//                                     console.log("Invalid Number");
-// }
+switch(dayOfWeek){
+    case 0:
+        console.log("0 = Sunday");
+        break;
+        case 1:
+            console.log("1 = Monday");
+            break;
+            case 2:
+                console.log("2 = Tuesday");
+                break;
+                case 3:
+                    console.log("3 = Wednesday");
+                    break;
+                    case 4:
+                        console.log("4 = Thusday");
+                        break;
+                        case 5:
+                            console.log("5 = Friday");
+                            break;
+                            case 6:
+                                console.log("6 = Saturday");
+                                break;
+                                default:
+                                    console.log("Invalid Number");
+}
 
 
 
@@ -521,13 +526,13 @@ Also calculate the factorial of 5 using a while loop.
 
 // Answer 19:
 
-// let counts = 10;
+let counts = 10;
 
-// while(counts >= 1){
-//     console.log(counts);
-//     counts--;
-// }
-// console.log("Blast off");
+while(counts >= 1){
+    console.log(counts);
+    counts--;
+}
+console.log("Blast off");
 
 
 
@@ -544,17 +549,17 @@ until enteredPassword === "secret123" or 5 attempts are made.
 
 
 let i = 1;
-// do{
-//     let userOutput = prompt("Enter A secret password");
-//     i++
-//     if(userOutput === "secret123"){
-//         console.log(userOutput+" Correct Password");
-//         break;
-//     }else{
-//         console.log("5 attempts are made.");
-//     }
+do{
+    let userOutput = prompt("Enter A secret password");
+    i++
+    if(userOutput === "secret123"){
+        console.log(userOutput+" Correct Password");
+        break;
+    }else{
+        console.log("5 attempts are made.");
+    }
     
-// }while(i<=5);
+}while(i<=5);
 
 
 
@@ -657,3 +662,139 @@ Test with multiple test cases
 // Answer 23:
 
 
+let emAil = prompt("Enter Email");
+let passWord = prompt("Enter Password");
+
+function validateForm(email, password){
+    if(emAil.includes("@")){
+        return true;
+        
+    }else if(!emAil.includes("@")){
+        console.log("error The email don't contain @");
+        return false;
+    }
+
+
+    if(passWord.length > 8){
+        return true;
+
+    }else if(!passWord.length > 8){
+        console.log("error The password must contain at least 8 characters");
+        return false;
+    }
+}
+
+console.log(validateForm(emAil, passWord));
+
+
+console.log(validateForm("ahmed123@gmail", "password123"));
+console.log(validateForm("bilal@gmail.com", "bilal123"));
+console.log(validateForm("ali1234", "ali123"));
+console.log(validateForm("shahid123", "shahid123"));
+
+
+
+
+
+
+/*
+Question 24: Temperature Converter
+Create a function convertTemperature that:
+
+Takes a temperature and a unit ("C" or "F") as parameters
+Converts Celsius to Fahrenheit: (C × 9/5) + 32
+Converts Fahrenheit to Celsius: (F - 32) × 5/9
+Returns the converted value with 1 decimal place
+*/
+
+
+// Answer 24:
+
+
+const convertTemperature = (c,f) => {
+    let celsius = (c * 9/5) + 32;
+    return celsius.toFixed(1);
+
+    let fahrenheit = (f - 32) * 5/9;
+    return fahrenheit.toFixed(1);
+}
+
+console.log(convertTemperature(1, "c"));
+console.log(convertTemperature(23, "f"));
+
+
+
+
+
+/*
+Question 25: Shopping Cart Array Operations
+Create an array cart = [] and write these functions:
+
+addItem(name, price): Adds item object to cart
+removeItem(name): Removes item by name
+calculateTotal(): Returns sum of all item prices
+applyDiscount(percent): Applies discount to total
+listItems(): Returns array of just item names
+*/
+
+
+// Answer 25:
+
+
+
+let cart = [];
+
+function addItem(name, price) {
+    cart.push({
+        name: name,
+        price: price
+    });
+}
+
+function removeItem(name) {
+    cart = cart.filter(item => item.name !== name);
+}
+
+function calculateTotal() {
+    let total = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        total += cart[i].price;
+    }
+
+    return total;
+}
+
+function applyDiscount(percent) {
+    let total = calculateTotal();
+    let discount = total * (percent / 100);
+
+    return total - discount;
+}
+
+function listItems() {
+    let names = [];
+
+    for (let i = 0; i < cart.length; i++) {
+        names.push(cart[i].name);
+    }
+
+    return names;
+}
+
+addItem("Laptop", 800);
+addItem("Mouse", 25);
+addItem("Keyboard", 50);
+
+console.log(cart);
+
+console.log("Total:", calculateTotal());
+
+console.log("After 10% Discount:", applyDiscount(10));
+
+console.log("Items:", listItems());
+
+removeItem("Mouse");
+
+console.log("Updated Cart:", cart);
+console.log("Updated Total:", calculateTotal());
